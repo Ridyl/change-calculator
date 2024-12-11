@@ -1,0 +1,46 @@
+body {
+    display: grid;
+}
+
+.input-area,
+.bill-area,
+.coin-area {
+    padding: 15px;
+    margin: 10px;
+    background-color: rgb(226, 226, 226);
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(138, 138, 138);
+}
+
+.input-area {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.input-groups {
+    width: 100%;
+    justify-items: center;
+}
+
+.input-groups > input {
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+.bill-area {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.coin-area {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.area, 
+.groups {
+    text-align: center;
+}

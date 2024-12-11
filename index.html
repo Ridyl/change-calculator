@@ -3,46 +3,71 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    
     <div class="title">
       <h1 class="title-text">Change Calculator</h1>
     </div>
+
     <div class="input-area">
       <div class="input-groups">
-        <p class="amount-due">How much is due for the sale?</p>
+        <p class="amount-due"><strong>How much is due for the sale?</strong></p>
         <input type="number" id="amount-due">
       </div>
       <div class="input-groups">
-        <p class="customer-given">How much has the customer given you?</p>
+        <p class="customer-given"><strong>How much has the customer given you?</strong></p>
         <input type="number" id="amount-received">
       </div>
       <button id="calculate-change">Calculate!</button>
     </div>
 
-    <div class="dollar-area">
-      <p class="dollars">Dollars</p>
-      <p id="dollars-output">0</p>
+    <div class="bill-area">
+      <div class="area">
+        <p class="dollars">Dollar Bills</p>
+        <p id="dollars-output">0</p>
+      </div>
+      <div class="area" id="two">
+        <p class="two-dollars">Two Dollar Bills</p>
+        <p id="two-output">0</p>
+      </div>
+      <div class="area">
+        <p class="five=dollars">Five Dollar Bills</p>
+        <p id="five-output">0</p>
+      </div>
+      <div class="area">
+        <p class="ten-dollars">Ten Dollar Bills</p>
+        <p id="ten-output">0</p>
+      </div>
+      <div class="area">
+        <p class="twenty-dollars">Twenty Dollars Bills</p>
+        <p id="twenty-output">0</p>
+      </div>
     </div>
 
     <div class="coin-area">
-      <div class="coin-groups">
+      <div class="groups">
         <p class="coins" id="quarter">Quarter</p>
         <p id="quarters-output">0</p>
       </div>
-      <div class="coin-groups">
+      <div class="groups">
         <p class="coins" id="dime">Dimes</p>
         <p id="dimes-output">0</p>
       </div>
-      <div class="coin-groups">
+      <div class="groups">
         <p class="coins" id="nickle">Nickles</p>
         <p id="nickels-output">0</p>
       </div>
-      <div class="coin-groups">
+      <div class="groups">
         <p class="coins" id="penny">Pennies</p>
         <p id="pennies-output">0</p>
       </div>
     </div>
+
+    <label for="no-two">Remove Two Dollar Bills
+      <input type="checkbox" id="no-two">
+    </label>
 
     <script src="main.js"></script>
   </body>
