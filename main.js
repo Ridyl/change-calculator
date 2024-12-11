@@ -34,10 +34,9 @@ function calculationButtonHandler() {
 function calculationDistributor(due, rec) {
     let change = parseFloat(rec - due);
 
-    if (change > 1) {
+    if (change > 0) {
         bills(change);
-    } else if (change > 0 && change < 1) {
-        quarter(change);
+        coins(change);
     } else {
         console.log(`Customer owes ${Number(change.toFixed(2))}.`);
     }
